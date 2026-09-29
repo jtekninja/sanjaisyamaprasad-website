@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>Sanjai Syamaprasad Technical Notes</title>
+<link>https://sanjaisyamaprasad.com/resources.html</link>
+<description>Software architecture, AI-assisted workflows, and product engineering notes by Sanjai Syamaprasad.</description>
+<language>en-us</language>
+<lastBuildDate>Tue, 29 Sep 2026 00:00:00 -0400</lastBuildDate>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://sanjaisyamaprasad.com/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Build the workflow first. Add AI where it earns its place.</title>
+<link>https://sanjaisyamaprasad.com/resources/ai-assisted-workflows.html</link>
+<guid isPermaLink="true">https://sanjaisyamaprasad.com/resources/ai-assisted-workflows.html</guid>
+<pubDate>Tue, 29 Sep 2026 00:00:00 -0400</pubDate>
+<description>A practical approach to AI-assisted application design: keep deterministic rules deterministic and place AI at the unstructured edges.</description>
+</item>
+<item>
+<title>How RentNinja turns screening work into a structured application.</title>
+<link>https://sanjaisyamaprasad.com/resources/rentninja-architecture.html</link>
+<guid isPermaLink="true">https://sanjaisyamaprasad.com/resources/rentninja-architecture.html</guid>
+<pubDate>Tue, 29 Sep 2026 00:00:00 -0400</pubDate>
+<description>A walkthrough of the data model, authentication, workflow state, and AI-assisted intake behind the published RentNinja application.</description>
+</item>
+</channel>
+</rss>
