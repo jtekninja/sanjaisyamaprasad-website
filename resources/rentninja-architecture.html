@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#f6f5f1">
 <title>RentNinja Architecture Walkthrough | Sanjai Syamaprasad</title>
 <meta name="description" content="Sanjai Syamaprasad explains the architecture behind the live RentNinja application: organization-scoped data, applicant workflows, authentication, and AI-assisted intake.">
 <link rel="canonical" href="https://sanjaisyamaprasad.com/resources/rentninja-architecture.html">
@@ -11,14 +13,18 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://sanjaisyamaprasad.com/resources/rentninja-architecture.html">
 <meta property="og:image" content="https://sanjaisyamaprasad.com/social-card.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="600">
+<meta property="og:image:height" content="315">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://sanjaisyamaprasad.com/social-card.jpg">
+<link rel="alternate" type="application/rss+xml" title="Sanjai Syamaprasad Technical Notes" href="https://sanjaisyamaprasad.com/feed.xml">
 <link rel="stylesheet" href="../styles.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"RentNinja Architecture Walkthrough","description":"A practical architecture walkthrough of the live RentNinja application.","author":{"@type":"Person","@id":"https://sanjaisyamaprasad.com/#person","name":"Sanjai Syamaprasad","url":"https://sanjaisyamaprasad.com/"},"publisher":{"@type":"Person","@id":"https://sanjaisyamaprasad.com/#person","name":"Sanjai Syamaprasad"},"mainEntityOfPage":"https://sanjaisyamaprasad.com/resources/rentninja-architecture.html","datePublished":"2026-09-29","dateModified":"2026-09-29","image":"https://sanjaisyamaprasad.com/social-card.jpg"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"Article","headline":"RentNinja Architecture Walkthrough","description":"A practical architecture walkthrough of the live RentNinja application.","author":{"@type":"Person","@id":"https://sanjaisyamaprasad.com/#person","name":"Sanjai Syamaprasad","url":"https://sanjaisyamaprasad.com/"},"publisher":{"@type":"Person","@id":"https://sanjaisyamaprasad.com/#person","name":"Sanjai Syamaprasad"},"mainEntityOfPage":"https://sanjaisyamaprasad.com/resources/rentninja-architecture.html","datePublished":"2026-09-29","dateModified":"2026-09-29","image":"https://sanjaisyamaprasad.com/social-card.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sanjaisyamaprasad.com/"},{"@type":"ListItem","position":2,"name":"Technical Notes","item":"https://sanjaisyamaprasad.com/resources.html"},{"@type":"ListItem","position":3,"name":"RentNinja Architecture Walkthrough","item":"https://sanjaisyamaprasad.com/resources/rentninja-architecture.html"}]}]}</script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header"><div class="wrap nav"><a class="brand" href="../index.html">Sanjai <span>Syamaprasad</span></a><nav class="nav-links" aria-label="Main navigation"><a href="../about.html">About</a><a href="../projects.html">Projects</a><a href="../contact.html" class="nav-cta">Get in touch</a></nav></div></header>
+<header class="site-header"><div class="wrap nav"><a class="brand" href="../index.html">Sanjai <span>Syamaprasad</span></a><nav class="nav-links" aria-label="Main navigation"><a href="../about.html">About</a><a href="../projects.html">Projects</a><a href="../resources.html" aria-current="page">Notes</a><a href="../contact.html" class="nav-cta">Get in touch</a></nav></div></header>
 <main id="main"><article>
 <section class="page-intro"><div class="wrap"><div class="eyebrow">Technical note · Live product</div><h1>How RentNinja turns screening work into a structured application.</h1><p>A practical walkthrough of the data model, workflow, authentication, and AI-assisted intake behind my published RentNinja application.</p><p class="note">By <a href="../about.html">Sanjai Syamaprasad</a> · Software Engineer & AI Application Developer · Updated September 29, 2026</p><div class="actions"><a class="button" href="https://rent.jtekninja.com/">Open live RentNinja ↗</a><a class="button secondary" href="https://github.com/jtekninja/RentNinja-AI">View source ↗</a></div></div></section>
 
@@ -43,5 +49,5 @@
 <aside class="case-aside"><div class="aside-row"><b>Status</b><span><span class="live-dot" aria-hidden="true"></span>Published</span></div><div class="aside-row"><b>Topic</b><span>Application architecture</span></div><div class="aside-row"><b>Stack</b><span>Next.js · TypeScript · MongoDB · Mongoose · Auth.js</span></div><div class="aside-row"><b>Project</b><span><a href="../projects/rentninja.html">RentNinja case study →</a></span></div><div class="aside-row"><b>More writing</b><span><a href="../resources.html">Technical notes →</a></span></div></aside>
 </div></section>
 </article></main>
-<footer class="footer"><div class="wrap footer-row"><span>© 2026 Sanjai Syamaprasad</span><div class="footer-links"><a href="../resources.html">Technical notes</a><a href="../projects.html">Projects</a><a href="../resume.html">Engineering profile</a><a href="../contact.html">Contact</a></div></div></footer>
+<footer class="footer"><div class="wrap footer-row"><span>© 2026 Sanjai Syamaprasad</span><div class="footer-links"><a href="../resources.html">Technical notes</a><a href="../projects.html">Projects</a><a href="../resume.html">Engineering profile</a><a href="../contact.html">Contact</a><a href="https://github.com/jtekninja" rel="me">GitHub</a><a href="https://www.linkedin.com/in/sanjaisyamaprasad" rel="me">LinkedIn</a></div></div></footer>
 </body></html>
