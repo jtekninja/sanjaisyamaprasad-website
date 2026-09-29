@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Building AI-Assisted Workflows | Sanjai Syamaprasad</title>
+<meta name="description" content="Sanjai Syamaprasad explains a practical approach to AI-assisted software: build the workflow and data model first, then use AI where unstructured input creates real friction.">
+<link rel="canonical" href="https://sanjaisyamaprasad.com/resources/ai-assisted-workflows.html">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<meta property="og:title" content="Building AI-Assisted Workflows | Sanjai Syamaprasad"><meta property="og:description" content="Build the workflow first. Add AI where it earns its place."><meta property="og:type" content="article"><meta property="og:url" content="https://sanjaisyamaprasad.com/resources/ai-assisted-workflows.html"><meta property="og:image" content="https://sanjaisyamaprasad.com/social-card.jpg">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://sanjaisyamaprasad.com/social-card.jpg">
+<link rel="stylesheet" href="../styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Build the workflow first. Add AI where it earns its place.","description":"A practical approach to AI-assisted application design.","author":{"@type":"Person","@id":"https://sanjaisyamaprasad.com/#person","name":"Sanjai Syamaprasad","url":"https://sanjaisyamaprasad.com/"},"mainEntityOfPage":"https://sanjaisyamaprasad.com/resources/ai-assisted-workflows.html","datePublished":"2026-09-29","dateModified":"2026-09-29","image":"https://sanjaisyamaprasad.com/social-card.jpg"}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap nav"><a class="brand" href="../index.html">Sanjai <span>Syamaprasad</span></a><nav class="nav-links" aria-label="Main navigation"><a href="../about.html">About</a><a href="../projects.html">Projects</a><a href="../contact.html" class="nav-cta">Get in touch</a></nav></div></header>
+<main id="main"><article>
+<section class="page-intro"><div class="wrap"><div class="eyebrow">Technical note · Product engineering</div><h1>Build the workflow first. <span class="serif">Add AI where it earns its place.</span></h1><p>My working rule for AI-enabled applications is simple: the product still needs to make sense when you describe the workflow without saying “AI.”</p><p class="note">By <a href="../about.html">Sanjai Syamaprasad</a> · Software Engineer & AI Application Developer · September 29, 2026</p></div></section>
+
+<section class="section"><div class="wrap case-layout"><div class="case-main">
+<p class="large-copy">AI is useful when it reduces a real source of friction. It is much less useful when it is added before the application has a clear user, state model, or next action.</p>
+
+<h2>1. Start with the job the user is trying to finish</h2><p>Before choosing a model or prompt, I write down the sequence the user is actually moving through. What comes in? What state needs to be stored? What decision or action happens next? That usually reveals which parts belong to ordinary application code and which parts may benefit from a model.</p>
+
+<h2>2. Keep deterministic rules deterministic</h2><p>Authentication, authorization, database ownership, required fields, routing, status transitions, and calculations should not become probabilistic just because an application includes AI. Those are places where predictable code is easier to test, explain, and maintain.</p>
+
+<h2>3. Put AI at the unstructured edges</h2><p>One pattern I use is to place AI between messy human input and a structured application model. In RentNinja, for example, the useful AI boundary is around reviewing or extracting information from documents and pasted text. The application still owns the applicant record, workflow state, access rules, and the place where the result is reviewed.</p>
+
+<div class="diagram" aria-label="AI-assisted workflow pattern"><div>Messy input<br><small>text · file · context</small></div><div class="accent">AI assist<br><small>extract · summarize</small></div><div>Validate<br><small>schema · rules</small></div><div>Application state<br><small>database record</small></div><div class="accent">Human review<br><small>inspect · decide</small></div><div>Next action<br><small>workflow continues</small></div></div>
+
+<h2>4. Treat model output as input to the system</h2><p>A model response should not become trustworthy merely because it is formatted cleanly. I prefer structured outputs that can be validated, displayed in context, and corrected. The application should know what to do if the output is incomplete, malformed, or simply not useful.</p>
+
+<h2>5. Design for an obvious fallback</h2><p>If a user cannot continue when the model is unavailable, the feature may be too tightly coupled to AI. A good fallback can be manual entry, a saved draft, a retry path, or a simpler deterministic flow. The exact fallback depends on the product, but it should be considered during design rather than after an outage.</p>
+
+<h2>6. Measure the product outcome, not the presence of AI</h2><p>The question I care about is whether the workflow became clearer, faster to operate, or easier to understand—not whether the application can advertise another AI feature. That keeps model choice secondary to product behavior.</p>
+
+<h2>How this shapes my projects</h2><p>RentNinja is the clearest published example of this approach. QuestNinja and ShiftNinja are still development projects, but the same principle applies: define the learning or coordination loop first, then decide where AI can add useful context without taking control away from the user.</p>
+
+<p class="note">Related: <a href="rentninja-architecture.html">RentNinja architecture walkthrough</a> · <a href="../projects.html">Project status and case studies</a> · <a href="https://github.com/jtekninja">Public GitHub repositories</a></p>
+</div>
+<aside class="case-aside"><div class="aside-row"><b>Topic</b><span>AI application architecture</span></div><div class="aside-row"><b>Principle</b><span>Workflow first, AI second</span></div><div class="aside-row"><b>Published example</b><span><a href="../projects/rentninja.html">RentNinja →</a></span></div><div class="aside-row"><b>More writing</b><span><a href="../resources.html">Technical notes →</a></span></div></aside>
+</div></section>
+</article></main>
+<footer class="footer"><div class="wrap footer-row"><span>© 2026 Sanjai Syamaprasad</span><div class="footer-links"><a href="../resources.html">Technical notes</a><a href="../projects.html">Projects</a><a href="../resume.html">Engineering profile</a><a href="../contact.html">Contact</a></div></div></footer>
+</body></html>
