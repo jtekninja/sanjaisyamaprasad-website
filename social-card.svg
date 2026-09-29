@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Sanjai Syamaprasad — Software Engineer & AI Application Developer</title>
+  <desc id="desc">A warm paper background with a teal circle and dark typography.</desc>
+  <rect width="1200" height="630" fill="#f6f5f1"/>
+  <circle cx="1080" cy="90" r="250" fill="none" stroke="#057f79" stroke-opacity=".22" stroke-width="2"/>
+  <circle cx="1080" cy="90" r="205" fill="none" stroke="#057f79" stroke-opacity=".12" stroke-width="2"/>
+  <text x="82" y="92" font-family="monospace" font-size="19" letter-spacing="4" fill="#075b58">SANJAI SYAMAPRASAD</text>
+  <text x="82" y="250" font-family="Georgia, serif" font-size="86" fill="#17232b">Useful software,</text>
+  <text x="82" y="344" font-family="Georgia, serif" font-size="86" fill="#17232b">built with intent.</text>
+  <rect x="82" y="420" width="88" height="7" fill="#e17b5f"/>
+  <text x="82" y="486" font-family="Arial, sans-serif" font-size="25" fill="#68747a">Software Engineer &amp; AI Application Developer</text>
+  <text x="82" y="544" font-family="monospace" font-size="18" fill="#68747a">sanjaisyamaprasad.com</text>
+</svg>

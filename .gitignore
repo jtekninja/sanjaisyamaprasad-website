@@ -1,0 +1,17 @@
+# Local tooling and generated output
+node_modules/
+.cache/
+dist/
+build/
+coverage/
+*.log
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# OS/editor files
+.DS_Store
+.idea/
+.vscode/
