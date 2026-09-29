@@ -1,13 +1,37 @@
 # Sanjai Syamaprasad — personal website
 
-Lightweight static portfolio site. Open `index.html` directly or serve the directory with any static host.
+**Live site:** https://sanjaisyamaprasad.com
 
-## Editing
+Official first-party website for **Sanjai Syamaprasad**, a software engineer and AI application developer in Brooklyn, New York.
+
+The site brings together:
+- engineering background and technical profile
+- public software projects and case studies
+- the live [RentNinja](https://rent.jtekninja.com/) product
+- technical notes on application architecture and AI-assisted workflows
+- links to public code on [GitHub](https://github.com/jtekninja)
+
+## Key pages
+
+- [Home](https://sanjaisyamaprasad.com/)
+- [About](https://sanjaisyamaprasad.com/about.html)
+- [Engineering profile](https://sanjaisyamaprasad.com/resume.html)
+- [Projects](https://sanjaisyamaprasad.com/projects.html)
+- [Technical notes](https://sanjaisyamaprasad.com/resources.html)
+- [RentNinja case study](https://sanjaisyamaprasad.com/projects/rentninja.html)
+
+## Project status
+
+**RentNinja** is the currently published product. QuestNinja and ShiftNinja AI are development projects and are labeled accordingly on the website.
+
+## Site structure
 
 - Page copy lives in the HTML files.
 - Shared visual styling is in `styles.css`.
-- Public project pages live in `projects/`.
-- Only the website source and approved public assets belong in this repository.
+- Project case studies live in `projects/`.
+- Technical notes live in `resources/`.
+- Search discovery files include `sitemap.xml`, `robots.txt`, `feed.xml`, and `llms.txt`.
+- Approved public visual assets live in `assets/`.
 
 ## Local preview
 
@@ -19,4 +43,4 @@ Then open `http://localhost:4173/`.
 
 ## Deployment
 
-This is deployable to GitHub Pages, Netlify, Vercel static hosting, Cloudflare Pages, or any ordinary web server. Set the host to serve this directory and configure the domain to the host’s exact target after the host is selected. Do not invent Porkbun DNS values before that step; preserve existing MX/SPF/DKIM/DMARC records.
+The production website is deployed from this repository and served at **https://sanjaisyamaprasad.com**. Preserve the production domain, existing DNS records, and any email-related MX/SPF/DKIM/DMARC records when changing hosting or deployment settings.
