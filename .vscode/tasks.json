@@ -1,0 +1,72 @@
+{
+  // Git synchronization for this folder.
+  //
+  // The "Git: Auto Pull (ff-only)" task runs `git pull --ff-only` every time this
+  // folder is opened, so the checkout is fast-forwarded to the GitHub remote
+  // automatically (only when the working tree permits it - nothing is ever
+  // reset, stashed, or force-overwritten).
+  //
+  // IMPORTANT (VS Code setting that cannot live in this file):
+  // automatic folder-open tasks are gated by the application-scoped setting
+  // "task.allowAutomaticTasks", which only exists in USER settings. Enable it
+  // once per machine, e.g. Command Palette -> "Preferences: Open User Settings (JSON)"
+  // and add:  "task.allowAutomaticTasks": "on"
+  // (Alternatively, simply click "Allow" on the one-time prompt VS Code shows
+  // the first time this folder is opened in a trusted workspace.)
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Git: Auto Pull (ff-only)",
+      "detail": "Runs `git pull --ff-only` in ${workspaceFolder} automatically when this folder is opened.",
+      "type": "shell",
+      "command": "git",
+      "args": [
+        "pull",
+        "--ff-only"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "presentation": {
+        // "silent" keeps the terminal completely hidden on success and only
+        // reveals it if `git pull --ff-only` fails (e.g. diverged histories),
+        // and "close: true" disposes the terminal when the task ends so no
+        // stray terminal window is left behind.
+        "reveal": "silent",
+        "echo": false,
+        "focus": false,
+        "panel": "dedicated",
+        "showReuseMessage": false,
+        "clear": true,
+        "close": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Git: Pull (ff-only) - Visible Output",
+      "detail": "Manual fallback: the exact same fast-forward pull, but keeps the terminal open so the result is readable.",
+      "type": "shell",
+      "command": "git",
+      "args": [
+        "pull",
+        "--ff-only"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "echo": true,
+        "focus": false,
+        "panel": "dedicated",
+        "showReuseMessage": false,
+        "clear": true,
+        "close": false
+      },
+      "problemMatcher": []
+    }
+  ]
+}

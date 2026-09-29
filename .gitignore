@@ -14,4 +14,8 @@ coverage/
 # OS/editor files
 .DS_Store
 .idea/
-.vscode/
+
+# VS Code: ignore local editor state, but share the sync configuration
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json

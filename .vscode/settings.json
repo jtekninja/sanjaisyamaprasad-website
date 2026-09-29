@@ -1,0 +1,6 @@
+{
+  // Keep this workspace informed about the GitHub remote.
+  // NOTE: git.autofetchPeriod is expressed in MINUTES.
+  "git.autofetch": true,
+  "git.autofetchPeriod": 60
+}
