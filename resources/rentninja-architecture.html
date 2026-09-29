@@ -4,25 +4,31 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="theme-color" content="#f6f5f1">
+<meta name="author" content="Sanjai Syamaprasad">
 <title>RentNinja Architecture Walkthrough | Sanjai Syamaprasad</title>
 <meta name="description" content="Sanjai Syamaprasad explains the architecture behind the live RentNinja application: organization-scoped data, applicant workflows, authentication, and AI-assisted intake.">
-<link rel="canonical" href="https://sanjaisyamaprasad.com/resources/rentninja-architecture.html">
+<link rel="canonical" href="https://www.sanjaisyamaprasad.com/resources/rentninja-architecture.html">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <meta property="og:title" content="RentNinja Architecture Walkthrough | Sanjai Syamaprasad">
 <meta property="og:description" content="A practical engineering walkthrough of the live RentNinja application and its structured applicant workflow.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://sanjaisyamaprasad.com/resources/rentninja-architecture.html">
-<meta property="og:image" content="https://sanjaisyamaprasad.com/social-card.jpg">
+<meta property="og:url" content="https://www.sanjaisyamaprasad.com/resources/rentninja-architecture.html">
+<meta property="og:image" content="https://www.sanjaisyamaprasad.com/social-card.jpg">
+<meta property="og:image:alt" content="Sanjai Syamaprasad — Software Engineer & AI Application Developer">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="600">
 <meta property="og:image:height" content="315">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://sanjaisyamaprasad.com/social-card.jpg">
-<link rel="alternate" type="application/rss+xml" title="Sanjai Syamaprasad Technical Notes" href="https://sanjaisyamaprasad.com/feed.xml">
+<meta name="twitter:title" content="RentNinja Architecture Walkthrough | Sanjai Syamaprasad">
+<meta name="twitter:description" content="Sanjai Syamaprasad explains the architecture behind the live RentNinja application: organization-scoped data, applicant workflows, authentication, and AI-assisted intake.">
+<meta name="twitter:image" content="https://www.sanjaisyamaprasad.com/social-card.jpg">
+<meta name="twitter:image:alt" content="Sanjai Syamaprasad — Software Engineer & AI Application Developer">
+<link rel="alternate" type="application/rss+xml" title="Sanjai Syamaprasad Technical Notes" href="https://www.sanjaisyamaprasad.com/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"Article","headline":"RentNinja Architecture Walkthrough","description":"A practical architecture walkthrough of the live RentNinja application.","author":{"@type":"Person","@id":"https://sanjaisyamaprasad.com/#person","name":"Sanjai Syamaprasad","url":"https://sanjaisyamaprasad.com/"},"publisher":{"@type":"Person","@id":"https://sanjaisyamaprasad.com/#person","name":"Sanjai Syamaprasad"},"mainEntityOfPage":"https://sanjaisyamaprasad.com/resources/rentninja-architecture.html","datePublished":"2026-09-29","dateModified":"2026-09-29","image":"https://sanjaisyamaprasad.com/social-card.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sanjaisyamaprasad.com/"},{"@type":"ListItem","position":2,"name":"Technical Notes","item":"https://sanjaisyamaprasad.com/resources.html"},{"@type":"ListItem","position":3,"name":"RentNinja Architecture Walkthrough","item":"https://sanjaisyamaprasad.com/resources/rentninja-architecture.html"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"Article","headline":"RentNinja Architecture Walkthrough","description":"A practical architecture walkthrough of the live RentNinja application.","author":{"@type":"Person","@id":"https://www.sanjaisyamaprasad.com/#person","name":"Sanjai Syamaprasad","url":"https://www.sanjaisyamaprasad.com/"},"publisher":{"@type":"Person","@id":"https://www.sanjaisyamaprasad.com/#person","name":"Sanjai Syamaprasad"},"mainEntityOfPage":"https://www.sanjaisyamaprasad.com/resources/rentninja-architecture.html","datePublished":"2026-09-29","dateModified":"2026-09-29","image":"https://www.sanjaisyamaprasad.com/social-card.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.sanjaisyamaprasad.com/"},{"@type":"ListItem","position":2,"name":"Technical Notes","item":"https://www.sanjaisyamaprasad.com/resources.html"},{"@type":"ListItem","position":3,"name":"RentNinja Architecture Walkthrough","item":"https://www.sanjaisyamaprasad.com/resources/rentninja-architecture.html"}]}]}</script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
