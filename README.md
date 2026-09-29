@@ -1,6 +1,6 @@
 # Sanjai Syamaprasad — personal website
 
-**Live site:** https://sanjaisyamaprasad.com
+**Live site:** https://www.sanjaisyamaprasad.com
 
 Official first-party website for **Sanjai Syamaprasad**, a software engineer and AI application developer in Brooklyn, New York.
 
@@ -13,12 +13,12 @@ The site brings together:
 
 ## Key pages
 
-- [Home](https://sanjaisyamaprasad.com/)
-- [About](https://sanjaisyamaprasad.com/about.html)
-- [Engineering profile](https://sanjaisyamaprasad.com/resume.html)
-- [Projects](https://sanjaisyamaprasad.com/projects.html)
-- [Technical notes](https://sanjaisyamaprasad.com/resources.html)
-- [RentNinja case study](https://sanjaisyamaprasad.com/projects/rentninja.html)
+- [Home](https://www.sanjaisyamaprasad.com/)
+- [About](https://www.sanjaisyamaprasad.com/about.html)
+- [Engineering profile](https://www.sanjaisyamaprasad.com/resume.html)
+- [Projects](https://www.sanjaisyamaprasad.com/projects.html)
+- [Technical notes](https://www.sanjaisyamaprasad.com/resources.html)
+- [RentNinja case study](https://www.sanjaisyamaprasad.com/projects/rentninja.html)
 
 ## Project status
 
@@ -43,4 +43,4 @@ Then open `http://localhost:4173/`.
 
 ## Deployment
 
-The production website is deployed from this repository and served at **https://sanjaisyamaprasad.com**. Preserve the production domain, existing DNS records, and any email-related MX/SPF/DKIM/DMARC records when changing hosting or deployment settings.
+The production website is deployed from this repository and served at **https://www.sanjaisyamaprasad.com**. Preserve the production domain, existing DNS records, and any email-related MX/SPF/DKIM/DMARC records when changing hosting or deployment settings.
