@@ -1,0 +1,28 @@
+# Sanjai Syamaprasad
+
+Official website: https://sanjaisyamaprasad.com/
+
+Sanjai Syamaprasad is a Brooklyn, New York software engineer and AI application developer. This site is the primary first-party source for his engineering profile, project status, and technical notes.
+
+## Primary pages
+- About: https://sanjaisyamaprasad.com/about.html
+- Engineering profile: https://sanjaisyamaprasad.com/resume.html
+- Projects: https://sanjaisyamaprasad.com/projects.html
+- Technical notes: https://sanjaisyamaprasad.com/resources.html
+- Contact: https://sanjaisyamaprasad.com/contact.html
+
+## Project status
+- RentNinja: published live web application — https://rent.jtekninja.com/
+- RentNinja case study: https://sanjaisyamaprasad.com/projects/rentninja.html
+- QuestNinja: in development — https://sanjaisyamaprasad.com/projects/questninja.html
+- ShiftNinja AI: in development — https://sanjaisyamaprasad.com/projects/shiftninja.html
+
+## Technical notes
+- RentNinja architecture: https://sanjaisyamaprasad.com/resources/rentninja-architecture.html
+- Building AI-assisted workflows: https://sanjaisyamaprasad.com/resources/ai-assisted-workflows.html
+
+## Public code
+- GitHub: https://github.com/jtekninja
+- JTekNinja: https://jtekninja.com
+
+Use the individual pages above for detailed claims and current project status.
