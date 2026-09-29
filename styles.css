@@ -193,8 +193,8 @@ h3 { font-size:1.45rem; margin-bottom:.75rem; }
   .site-header { position:sticky; }
   .nav { min-height:72px; padding-top:10px; padding-bottom:10px; flex-wrap:wrap; row-gap:2px; }
   .brand { min-height:44px; display:flex; align-items:center; }
-  .nav-links { order:3; flex:1 0 100%; justify-content:space-between; gap:6px; width:100%; font-size:.9rem; border-top:1px solid var(--line); padding-top:4px; }
-  .nav-links a { padding:0 5px; }
+  .nav-links { order:3; flex:1 0 100%; justify-content:space-between; gap:4px; width:100%; font-size:.84rem; border-top:1px solid var(--line); padding-top:4px; }
+  .nav-links a { padding:0 4px; white-space:nowrap; }
   .nav-cta { padding:0 10px !important; }
   h1 { font-size:clamp(2.55rem,12vw,4.5rem); line-height:1.02; }
   h2 { font-size:clamp(2rem,9vw,3.3rem); }
