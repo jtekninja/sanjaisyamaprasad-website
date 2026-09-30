@@ -94,6 +94,8 @@ h3 { font-size:1.45rem; margin-bottom:.75rem; }
 .project-shot-card img { width:100%; height:100%; object-fit:cover; object-position:top center; transition:transform .3s ease; }
 .quest-shot { background:#071a39 !important; }
 .quest-shot img { object-fit:contain; object-position:center; background:#071a39; }
+.shift-shot { background:#020817 !important; }
+.shift-shot img { object-fit:contain; object-position:center; background:#020817; }
 .case-project-media { margin:0 auto 44px; max-width:1104px; padding:0 28px; }
 .case-project-frame { position:relative; overflow:hidden; border:1px solid var(--line); background:#071a39; box-shadow:0 22px 55px rgba(23,35,43,.12); }
 .case-project-frame img { width:100%; height:auto; aspect-ratio:16/9; object-fit:contain; object-position:center; background:#071a39; }
