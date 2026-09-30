@@ -1,0 +1,43 @@
+name: Rebuild ShiftNinja image
+
+on:
+  push:
+    paths:
+      - '.tmp/shiftninja-ready'
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Reconstruct and verify clean screenshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          head -c 8000 .tmp/shiftninja-b64-1.txt > /tmp/shiftninja.b64
+          cat .tmp/shiftninja-b64-2.txt >> /tmp/shiftninja.b64
+          cat .tmp/shiftninja-b64-3.txt >> /tmp/shiftninja.b64
+          cat .tmp/shiftninja-b64-4.txt >> /tmp/shiftninja.b64
+          cat .tmp/shiftninja-b64-5.txt >> /tmp/shiftninja.b64
+          test "$(wc -c < /tmp/shiftninja.b64)" -eq 37084
+          base64 --decode /tmp/shiftninja.b64 > assets/shiftninja-product-v3.webp
+          test "$(wc -c < assets/shiftninja-product-v3.webp)" -eq 27812
+          echo "a773e2f7f85c670a8fa107748ee4528bf21efe6826b162e22c12d637773da437  assets/shiftninja-product-v3.webp" | sha256sum -c -
+
+      - name: Commit verified asset
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          rm -f .tmp/shiftninja-b64-*.txt .tmp/shiftninja-ready
+          git add assets/shiftninja-product-v3.webp .tmp
+          git commit -m "Install verified clean ShiftNinja screenshot"
+          git push
